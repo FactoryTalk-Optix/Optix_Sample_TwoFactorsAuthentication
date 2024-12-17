@@ -1,0 +1,27 @@
+Name: Security
+Id: g=e897771512d0ab458586d6c1147254ed
+Type: SecurityCategoryFolder
+Children:
+- File: Users/Users.yaml
+- File: Groups/Groups.yaml
+- Name: UserWithMFA
+  Id: g=e8d272b4f67902ebcacb79cedae34b05
+  Supertype: UserType
+  Children:
+  - Name: SetupKeyValue
+    Id: g=ce24504edab03d0deb6a94d55f8f0632
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: OneTimeKeyValidated
+    Id: g=b543fa3d891a13f79d099135c85d6ff1
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: SetupKeyImage
+    Id: g=0411907727627c038b3159e00df94d0d
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: AccountSecretKey
+    Id: g=6abf7fd6ed79f450f62192683e18c8c9
+    Type: BaseDataVariableType
+    DataType: Password

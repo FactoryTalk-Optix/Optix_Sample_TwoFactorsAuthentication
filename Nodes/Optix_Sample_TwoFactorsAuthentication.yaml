@@ -1,0 +1,89 @@
+Name: Optix_Sample_TwoFactorsAuthentication
+Id: g=780c4c5308c341925f0629875e3f536d
+Type: ProjectFolder
+Children:
+- Name: PasswordPolicy
+  Id: g=632c18197c760a22737654785b5c5126
+  Type: PasswordPolicy
+  Children:
+  - Name: MaximumPasswordAge
+    Id: g=48f2b8932def740e02dafe03203f20e0
+    Type: BaseDataVariableType
+    DataType: UInt16
+  - Name: EnforcePasswordHistory
+    Id: g=e87339a86a1fe6a607d5e82ec16954ae
+    Type: BaseDataVariableType
+    DataType: Byte
+    Value: 1
+  - Name: MinimumPasswordAge
+    Id: g=3acd39f16226d8377cf4fb68595337d6
+    Type: BaseDataVariableType
+    DataType: UInt16
+  - Name: MinimumPasswordLength
+    Id: g=fe4ef6e2fd983bdc38e2d64ab06ad39c
+    Type: BaseDataVariableType
+    DataType: Byte
+    Value: 8
+- File: UI/UI.yaml
+- File: Model/Model.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: Reports/Reports.yaml
+- File: 'OPC-UA/OPC-UA.yaml'
+- File: CommDrivers/CommDrivers.yaml
+- File: NetLogic/NetLogic.yaml
+- File: Security/Security.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml
+- Name: Authentication
+  Id: g=d70eb8f35f4184a46253d09ed47a6a05
+  Type: PropertyGroup
+  Children:
+  - Name: DefaultUserFolder
+    Id: g=167e78bf4e2b359308c67da3d583a227
+    Type: NodePointer
+    DataType: NodeId
+    ReferenceType: HasProperty
+    Value: "/Objects/Optix_Sample_TwoFactorsAuthentication/Security/Users"
+    Children:
+    - Name: Kind
+      Id: g=1a0db87df92b7207f6fc62f960a6ec5c
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+  - Name: AuthenticationMode
+    Id: g=5f28109397e2b3645826be378ebdeacc
+    Type: BaseDataVariableType
+    DataType: AuthenticationMode
+- Name: AlarmConfiguration
+  Id: g=59f92520a5162e38b6c5b4fb3d24af3b
+  Type: PropertyGroup
+  Children:
+  - Name: BranchingEnabled
+    Id: g=0f78fd1481de2b67a35617c142c8934e
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ReferenceType: HasProperty
+- Name: Localization
+  Id: g=9c5a34419e622d7f06352800c5cc47d9
+  Type: PropertyGroup
+  Children:
+  - Name: Locales
+    Id: g=845ca5b126db1f5b60f76cd93cef2e27
+    Type: BaseDataVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+  - Name: LocaleFallbackList
+    Id: g=f12bf436819caeef8e5e0d473972e07f
+    Type: BaseDataVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]

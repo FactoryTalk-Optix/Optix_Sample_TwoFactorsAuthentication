@@ -1,0 +1,26 @@
+Name: Users
+Id: g=4d0d9b498db1378a87fb1f7a11a4a8a7
+Type: UsersCategoryFolder
+Children:
+- Name: User1
+  Id: g=710a7672008810da8906d19b7e6bcdf8
+  Type: UserWithMFA
+  Children:
+  - Name: SetupKeyValue
+    Id: g=24be9690f70326a52970f12ccae36341
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: OneTimeKeyValidated
+    Id: g=29e3432def62a1c73a886fda2382b45e
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: SetupKeyImage
+    Id: g=926e6b3d58b9faa77a89c26cd4b7b6dc
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: AccountSecretKey
+    Id: g=ef3c60a89bbf07e3d3d963a5f4263d50
+    Type: BaseDataVariableType
+    DataType: Password
+    Value: "0"

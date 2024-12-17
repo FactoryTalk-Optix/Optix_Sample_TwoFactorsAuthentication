@@ -1,0 +1,53 @@
+Name: Retentivity
+Id: g=31ff38ba8dc310fdb7ac85c911a7d108
+Type: RetentivityCategoryFolder
+Children:
+- Name: SecurityRetentivityStorage
+  Id: g=d75ad402bad445e9d1d436d8e73afa05
+  Type: RetentivityStorage
+  Children:
+  - Name: Nodes
+    Id: g=956c1d6662fcad8817876085e5a403d9
+    Type: BaseObjectType
+    Children:
+    - Name: Node1
+      Id: g=01f80337a2044ec08a156e32bdd92144
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/Optix_Sample_TwoFactorsAuthentication/Security/Users"
+      Children:
+      - Name: Kind
+        Id: g=dbf52028eb54d088e3857c3e411ea506
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Id: g=2fdeb09a36315b57bcc10827b46e5f91
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: Node2
+      Id: g=0fb8cc0e86a926b2951f0783c785621f
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/Optix_Sample_TwoFactorsAuthentication/Security/Groups"
+      Children:
+      - Name: Kind
+        Id: g=572bb59053e42b35f376a04294e9303c
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Id: g=2eabc972ea063ac3d89ef50589b08f25
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+  - Name: WriteDelay
+    Id: g=2670b3dff2fbb881047796c7bfd22e1f
+    Type: BaseDataVariableType
+    DataType: Duration
+    ReferenceType: HasProperty
+  - Name: DeltaObserverEnabled
+    Id: g=38f93077252cd3e8b8854d9d96b1bdf9
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ReferenceType: HasProperty
+    Value: true

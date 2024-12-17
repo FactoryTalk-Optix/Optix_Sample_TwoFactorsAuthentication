@@ -1,0 +1,340 @@
+Name: Templates
+Id: g=29c0ad842d5b76bf54d765db647e2656
+Type: FolderType
+Children:
+- File: UserEditor/UserEditor.yaml
+- File: LoginForm/LoginForm.yaml
+- Name: QrCodePanel
+  Id: g=3c1c02c4d074fff6fe290780141d731d
+  Supertype: Dialog
+  ReferenceType: HasComponent
+  Children:
+  - Class: Reference
+    Target: ns=7;i=519
+    Direction: Forward
+  - Name: Width
+    Id: g=a128d0aa6b2d65e941699a2ed9ad4902
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 400.0
+  - Name: Height
+    Id: g=a0343a89603e4559808245b1289d0d6b
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 380.0
+  - Name: Background
+    Id: g=4e469a161e2473fc876d79c8009a218f
+    Type: Rectangle
+    Children:
+    - Name: Width
+      Id: g=5596230e9e8f243e68d438cd1c5583c0
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Id: g=10bd84d2a1de6476ecb7733b86b26068
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: BorderThickness
+      Id: g=1c611737b1d24a630799ef7150edf2b4
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+    - Name: HorizontalAlignment
+      Id: g=4ff05668b38400fbb96ed0ff8249d183
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Id: g=3d29b98886611bd51257a403a65c0faf
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: FillColor
+      Id: g=3ddeb7fa1a04d2dd3ba1a4f16e935323
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#808080b2"
+    - Name: HitTestVisible
+      Id: g=178288d08a993d0d1e077e9b79cb57c8
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: true
+    - Name: MouseDownEventHandler1
+      Id: g=f75718f218f2f7b96573a8f101c18552
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Id: g=826d1796cf1ecf6fa687c3f324bb294d
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseDownEvent"
+      - Name: MethodsToCall
+        Id: g=cb012ff86cecddffff91edde22eb5113
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Id: g=13aea288dd26cb2b0fb1200bc2c7cec0
+          Type: BaseObjectType
+          Children:
+          - Name: ns=5;ObjectPointer
+            Id: g=91b995a257c008beb177db5b54f6423c
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Id: g=470c633700aa085992f83f03f3afc6f8
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Id: g=c7de25bbbeb300027e2f3a0977f967a8
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../..@NodeId"
+              Children:
+              - Name: Mode
+                Id: g=ae8e43d4fecac0fdc8c63139d560a2bd
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=5;Method
+            Id: g=919810074d36c1777afd1e6157722340
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Close"
+      - Name: EventArguments
+        Id: g=edc4b583885b01ca494c92e293ce4979
+        Type: MouseDownEvent
+        Children:
+        - Name: EventId
+          Id: g=5b491849369d195a6fad467968a77722
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Id: g=855aed129d2a79845d6946c07da1f5c2
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Id: g=ec124032a5175bd92bb795a9cfd6d445
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Id: g=4bad1d46da2e6ddc732ffb003f7b2066
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Id: g=b7815afbe4fa492bfd868e4d5220bb97
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Id: g=21ce316a90e4100bfeef6d5203d9a238
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Id: g=7cc4f81eadb612d55697611f06eebdbf
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Id: g=1c0558589ab1faa7cb77cda1dfa811c1
+          Type: PropertyType
+          DataType: UInt16
+  - Name: Button1
+    Id: g=5827c5a2662f198c6a51019bcbf5b5be
+    Type: Button
+    Children:
+    - Name: HorizontalAlignment
+      Id: g=2a600600f6276b5470273cb530817e7d
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: Width
+      Id: g=5a1ce3bc2cea92ac349c4e94a8fc83df
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 32.0
+    - Name: Height
+      Id: g=2485897a714b124e8dc22daec2c25cf9
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 32.0
+    - Name: Text
+      Id: g=87bab24a98a91a40f2006c52675af0ec
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"X"}
+    - Name: MouseClickEventHandler1
+      Id: g=58049bbf375a91a68583c82fb286f221
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Id: g=a0b010ec3cd280c6bf62c69f88bba885
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Id: g=7dcc5696c20da4e9aada633252164d1e
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Id: g=41f9cd0966c14abc3d0d812e99310b58
+          Type: BaseObjectType
+          Children:
+          - Name: ns=5;ObjectPointer
+            Id: g=def80cb7e5f6104fdff6aa8cd518782f
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Id: g=f8e3d4020139c146976a4b13dca0bfc7
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Id: g=1f4ed94e57adb323c95395d694722f97
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../..@NodeId"
+              Children:
+              - Name: Mode
+                Id: g=0a101bf8ea24f255672c5747f8fcbd29
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=5;Method
+            Id: g=b4238e744fee3b7eb61899eba05e1577
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Close"
+      - Name: EventArguments
+        Id: g=c444c4171fa4a94d6e4d8cd357e1a77d
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Id: g=6c532918af0d4a6eda3decf1b4fb35ea
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Id: g=b4531d9f9b3dd5440e10b4430679e921
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Id: g=29c43d4d24d344a2f41ce30ec5ac3178
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Id: g=2a63e83952c4ce37650aeb59fec69caf
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Id: g=05967a816a8ccae8756f03ebcd37f98a
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Id: g=64bc679ce832e2626014cceb09a8c37b
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Id: g=1f0ca2cc15296b2a4b0549edcd016f23
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Id: g=646733a75a95382e9fbb797e338c5493
+          Type: PropertyType
+          DataType: UInt16
+  - Name: QrCodeImage
+    Id: g=b7173a9c83f4dae35f7642560334d006
+    Type: Image
+    Children:
+    - Name: Path
+      Id: g=849c502632bde75d314236427969cdc7
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+    - Name: Width
+      Id: g=2c850bee0c1a3c248ed26e36573d4333
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: Height
+      Id: g=a665761a1623879677eca811588c74b3
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: HorizontalAlignment
+      Id: g=75c542a2872bcb753b44ef0ed288f725
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: VerticalAlignment
+      Id: g=270f6a271cee82b6fcffdb86532cdef3
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: LeftMargin
+      Id: g=2845333f5e0cae1af1b53844a2ef9338
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 8.0
+    - Name: TopMargin
+      Id: g=222b379da7b89e4c5f9a8c4e38187409
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 8.0
+    - Name: RightMargin
+      Id: g=533c866d432cec7f9dc6f862655672d7
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 8.0
+    - Name: BottomMargin
+      Id: g=456ea36a4c87761986eaffa4da1154d2
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 8.0
+  - Name: QrCodeText
+    Id: g=fc23d3e049a287dcb7d795b55ae2b0fe
+    Type: Alias
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Id: g=ab112750f4f857d5961702b272f015f7
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Objects/Optix_Sample_TwoFactorsAuthentication/Security/UserWithMFA"
+  - Name: QrCodeGenerator
+    Id: g=f24d0a6f3d1caa141214bd31bcbd9f03
+    Type: NetLogic
+  - Name: HorizontalAlignment
+    Id: g=31a0a8f1d63209ed518394c9b9d154d7
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: VerticalAlignment
+    Id: g=7dc901a0c04b7f643e067cfb0995e0ec
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 3

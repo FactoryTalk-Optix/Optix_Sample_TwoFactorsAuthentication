@@ -1,0 +1,64 @@
+Name: NetLogic
+Id: g=ac5984f4d9101a6f590cb035aa2f6fed
+Type: NetLogicCategoryFolder
+Children:
+- Name: OTP_GenerateAndValidate
+  Id: g=c940b9496d31c2a93285d00ce51e1430
+  Type: NetLogic
+  Children:
+  - Class: Method
+    Name: ValidateCode
+    Id: g=837f92ef40f78c1e5717685015c4f8e8
+    Children:
+    - Name: ns=0;InputArguments
+      Id: g=4b58aa2a907ada666958cf27c1bfa153
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"accountSecretKey","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"code","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+    - Name: ns=0;OutputArguments
+      Id: g=814deca41d0fa98f49321fe51366ef61
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"result","DataType":{"Id":1},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Class: Method
+    Name: ValidateCodeToLed
+    Id: g=1ef5b414030ae74021ef51b0c407cf68
+    Children:
+    - Name: ns=0;InputArguments
+      Id: g=741b6bd88952a2abd6ddecedd9d5abe1
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"selectedUser","DataType":{"Id":17},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"code","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"resultLed","DataType":{"Id":17},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Class: Method
+    Name: ResetMfaToUser
+    Id: g=bc4de12c6a3e2357329a1899c82e8f91
+    Children:
+    - Name: ns=0;InputArguments
+      Id: g=a6c61273bece4df12bc029889683fc4a
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"selectedUser","DataType":{"Id":17},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Class: Method
+    Name: AddMfaToUser
+    Id: g=e508c1847f3ef460960c4acbb0556c8f
+    Children:
+    - Name: ns=0;InputArguments
+      Id: g=955402c49f37e301b8c990de2867d90f
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"selectedUser","DataType":{"Id":17},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]

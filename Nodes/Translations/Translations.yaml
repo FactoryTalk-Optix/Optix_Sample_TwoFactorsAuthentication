@@ -1,0 +1,58 @@
+Name: Translations
+Id: g=5078f5fc18810dfe36fa1cd5e8e68cc1
+Type: TranslationsCategoryFolder
+Children:
+- Name: LocalizationDictionary1
+  Id: g=0f0ec009c25772d103a6f82a8adf52e3
+  Type: LocalizationDictionary
+  DataType: String
+  ValueRank: OneOrMoreDimensions
+  ArrayDimensions: [0,0]
+  Value: 
+   {
+    "Type": 12,
+    "Dimensions": [41,2],
+    "Body": [
+     "","en-US",
+     "Create","Create",
+     "Groups","Groups",
+     "EmptyUserList","No users in list",
+     "Delete","Delete",
+     "Apply","Apply",
+     "Cancel","Cancel",
+     "Name","Name",
+     "PasswordChangedTooRecently","Password changed too recently",
+     "Password","Password",
+     "Locale:","Locale:",
+     "CannotCreateUserWithEmptyUsername","Cannot create user with empty username",
+     "UnableToGetUsers","Unable to get users",
+     "UsernameAlreadyExists","Username already exists",
+     "UserNotFound","User not found",
+     "PasswordAlreadyUsed","Password already used in the past",
+     "PasswordTooShort","Password too short",
+     "UnsupportedOperation","Unsupported operation",
+     "ChangesAppliedSuccessfully","Changes applied successfully",
+     "Old password","Old password",
+     "LoginFormPasswordExpired","Password expired",
+     "Login","Login",
+     "New password","New password",
+     "LoginChangePasswordFormPasswordTooShort","Password too short",
+     "Confirm password","Confirm password",
+     "Change password","Change password",
+     "Your password is expired. Please enter a new one","Your password is expired.\nPlease enter a new one.",
+     "Current User:","Current User:",
+     "Logout","Logout",
+     "LoginFormLoginSuccessful","Login successful",
+     "LoginChangePasswordFormUnsupportedOperation","Unsupported operation",
+     "LoginFormAuthenticationFailed","Authentication failed",
+     "LoginChangePasswordFormWrongOldPassword","Wrong old password",
+     "LoginChangePasswordFormUserNotFound","User not found",
+     "LoginChangePasswordFormPasswordAlreadyUsed","Password already used",
+     "LoginChangePasswordFormPasswordChangedTooRecently","Password changed too recently",
+     "LoginChangePasswordFormPasswordsDoNotMatch","Passwords do not match",
+     "OneTimePin","OneTimePin",
+     "ResetMfa","Reset MFA",
+     "SetupKey","Setup Key",
+     "TestMfa","Test MFA"
+    ]
+   }
